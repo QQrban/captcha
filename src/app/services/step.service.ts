@@ -4,7 +4,7 @@ import { Injectable, signal } from '@angular/core';
   providedIn: 'root',
 })
 export class StepService {
-  step = signal(1);
+  step = signal(0);
 
   nextStep() {
     if (this.step() < 3) {

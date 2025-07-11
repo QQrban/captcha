@@ -1,1 +1,16 @@
-<p>captcha-math works!</p>
+<div class="flex flex-col">
+  <div class="mt-4 border-2 w-96 p-3 flex gap-6 items-center">
+    <img [src]="'assets/a360bedd-' + random + '.png'" alt="captcha" />
+    <input
+      class="w-25 rounded p-4 text-lg border-1 border-gray-500"
+      type="text"
+      [(ngModel)]="mathInput"
+      [ngClass]="{
+        'border-3 border-red-500': incorrect
+      }"
+    />
+  </div>
+  <div class="self-end">
+    <app-button (onClick)="nextStep()" label="Go!" />
+  </div>
+</div>

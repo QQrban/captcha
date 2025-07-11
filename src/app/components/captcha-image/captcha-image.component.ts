@@ -2,11 +2,12 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { StepService } from '../../services/step.service';
+import { ButtonComponent } from '../../shared/button/buttonGo.component';
 
 @Component({
   selector: 'app-captcha-image',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ButtonComponent],
   templateUrl: './captcha-image.component.html',
 })
 export class CaptchaImageComponent {
