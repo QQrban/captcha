@@ -1,1 +1,13 @@
-<p>captcha-text works!</p>
+<div class="flex flex-col">
+  <div class="mt-4 border-2 w-96 p-3 flex gap-6 items-center">
+    <img src="assets/76a3c117-1.png" alt="captcha" />
+    <input
+      class="w-25 rounded p-1.5 text-lg border-1 border-gray-500"
+      type="text"
+      [(ngModel)]="input"
+    />
+  </div>
+  <div class="self-end">
+    <app-button (onClick)="finish()" label="Go!" />
+  </div>
+</div>
