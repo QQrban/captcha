@@ -5,6 +5,9 @@
       class="w-25 rounded p-1.5 text-lg border-1 border-gray-500"
       type="text"
       [(ngModel)]="input"
+      [ngClass]="{
+        'border-3 border-red-500': incorrect
+      }"
     />
   </div>
   <div class="self-end">
