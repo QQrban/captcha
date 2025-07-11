@@ -1,4 +1,8 @@
 <div class="p-3">
   <div class="text-3xl font-extrabold text-gray-700">Step: {{ step }} of 3</div>
+  @if (step == 1) {
   <app-captcha-image />
+  } @else if(step == 2) {
+  <app-captcha-math />
+  }
 </div>

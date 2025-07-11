@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { StepService } from '../../services/step.service';
 import { CaptchaImageComponent } from '../../components/captcha-image/captcha-image.component';
+import { CaptchaMathComponent } from '../../components/captcha-math/captcha-math.component';
 
 @Component({
   selector: 'app-captcha',
   standalone: true,
-  imports: [CaptchaImageComponent],
+  imports: [CaptchaImageComponent, CaptchaMathComponent],
   templateUrl: './captcha.component.html',
 })
 export class CaptchaComponent {
